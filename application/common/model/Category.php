@@ -33,12 +33,28 @@ class Category extends Model
         ];
 
         $order = [
-            'id'=>'desc'
+            'listorder'=>'desc',
+            'id'=>'desc',
         ];
 
         $result = $this->where($data)
                     ->order($order)
-                    ->paginate(2);
+                    ->paginate();
         return $result;
+    }
+
+    public function getNormalCategorysByParentId($parent_id = 0){
+        $data = [
+            'status' => 1,
+            'parent_id' => $parent_id,
+        ];
+
+        $order = [
+            'id' => 'desc',
+        ];
+
+        return $this->where($data)
+            ->order($order)
+            ->select();
     }
 }

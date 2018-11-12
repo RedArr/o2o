@@ -11,8 +11,13 @@ class Index extends Controller
         return $this->fetch();
     }
 
+    public function map()
+    {
+        return \Map::staticimage('香山南路19号院');
+    }
+
     public function welcome()
     {
-        return "123";
+        return '发送成功';
     }
 }

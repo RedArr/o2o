@@ -13,8 +13,8 @@ class Category extends Validate {
     ];
     //情景模式
     protected $scene = [
-        'add' => ['name','parent_id'], //添加
+        'add' => ['name','parent_id','id'], //添加
         'listorder' => ['id','listorder'], //排序
-        ''
+        'status'=>['id','status']
     ];
 }

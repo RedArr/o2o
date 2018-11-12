@@ -10,5 +10,11 @@
 // +----------------------------------------------------------------------
 
 return [
-    'connector' => 'Sync'
+    'connector' => 'Sync',
+    'ak' => '85ec5c2ddd8b7a48e8aedbb6c1aa1a99',
+    'baidu_map_url' => 'http://api.map.baidu.com/',
+    'geocoder' => 'geocoder/v2/',
+    'staticimage'=>'staticimage/v2',
+    'width' => 400,
+    'height' => 400,
 ];

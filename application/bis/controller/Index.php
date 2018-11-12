@@ -1,12 +1,11 @@
 <?php
-
-namespace app\index\controller;
+namespace app\bis\controller;
 
 use think\Controller;
 
 class Index extends Controller
 {
-    public function index()
+    public function Index()
     {
         return $this->fetch();
     }
